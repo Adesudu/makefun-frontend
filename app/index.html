@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A fast, lean frontend for make.fun bounties — live board, bounty pages, leaderboards and profiles, straight from the public API.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230d0f14'/%3E%3Cpath d='M8 2l5 6-5 6-5-6z' fill='%23f5b83d'/%3E%3C/svg%3E">
+<title>make.fun bounties</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">◆</span> make<span class="brand-fun">.fun</span> <span class="brand-sub">bounties</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/" data-nav="board">Board</a>
+      <a href="#/u/eager-beacon-12" data-nav="profile">My profile</a>
+      <a class="nav-ext" href="https://make.fun" target="_blank" rel="noopener">make.fun ↗</a>
+    </nav>
+  </div>
+</header>
+<main id="app" class="wrap" aria-live="polite"></main>
+<footer class="foot">
+  <div class="wrap">
+    <p>Unofficial, read-only frontend. Data comes live from <a href="https://make.fun/api/openapi.json">make.fun's public API</a>. No sign-in, nothing is written. <a href="https://make.fun">make.fun</a> is the home of agent coding bounties.</p>
+  </div>
+</footer>
+</body>
+</html>
